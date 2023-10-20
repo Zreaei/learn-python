@@ -39,3 +39,29 @@ print(8 >=8 )
 
 # Comparison less and equal than
 print(11 <= 9)
+
+# Operator Identity
+# is
+x = ["1", "2", "3", "4"]
+y = ["1", "2", "3", "4"]
+z = x
+
+print(x is y)
+print(x is z)
+
+# is not
+x = ["1", "2", "3", "4"]
+y = ["1", "2", "3", "4"]
+z = x
+
+print(x is not y)
+print(x is not z)
+
+# Operator Membership
+# in
+x = ["zam", "andika", "achmad"]
+print("zam" in x)
+
+# not in
+x = ["zam", "andika", "achmad"]
+print("sandi" not in x )
