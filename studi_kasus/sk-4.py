@@ -7,9 +7,13 @@ Bantulah Arsya dalam membuat program python untuk mencari tahu sisa
 buah yang ada di lemari es!"""
 
 # Jawab
-list_awal = input("Masukan list awal : ")
-list_filter = input("Masukan list filter : ")
-# cast_list = list_awal.split(",")
-# filter = cast_list.remove("Apel")
-# cast_filter = list_filter.split(",")
-# print(filter)
+list_awal = input("Masukkan list awal: ").replace(" ", "").split(",")
+list_filter = input("Masukkan list filter: ").replace(" ", "").split(",")
+
+list_hasil = list_awal.copy()
+for item_awal in list_awal:
+    for item_filter in list_filter:
+        if item_awal == item_filter:
+            list_hasil.remove(item_filter)
+
+print("Sisa:", list_hasil)

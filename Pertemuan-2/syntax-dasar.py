@@ -115,3 +115,111 @@ print(f"Selamat datang, {nama}")
 umur = int(input("Masukan umur anda : "))
 print(f"Umur anda adalah {umur}")
 print(type(umur))
+
+# Tipe Data di Python
+# String
+a = "Halo"
+print(type(a))
+# Integer
+a = 2
+print(type(a))
+# Float
+a = 2.5
+print(type(a))
+# Complex
+a = 2j
+print(type(a))
+# List
+a = ["Apel", "Nanas", "Durian"]
+print(type(a))
+# Tuple
+a = ("Apel", "Nanas", "Durian")
+print(type(a))
+# Dictionary
+a = {"Buah" : "Apel", "Jumlah" : 2}
+print(type(a))
+# Sets
+a = {"Apel", "Belimbing", "Cherry"}
+print(type(a))
+# Boolean
+a = True
+print(type(a))
+
+# Fungsi Tipe Data Numeric
+# Absolute(x) - Mengembalikan nilai absolute dari suatu nilai x
+a = abs(-10)
+print(a)
+# Max(x1,x2,x3) - Mengembalikan nilai paling besar dari seluruh nilai m
+a = max(1,3,5)
+print(a)
+# Min(x1,x2,x3) - Mengembalikan nilai paling kecil dari seluruh nilai
+a = min(1,3,5)
+print(a)
+# Pow(x,y) - Mengembalikan nilai x ** y
+a = pow(2,3)
+print(a)
+# Round(x,a) - Membulatkan nilai x sejumlah nilai a dibelakang koma
+a = round(10.7273,2)
+print(a)
+
+# Fungsi Tipe Data String
+# Len - mengecek panjang dari sebuah strings
+a = "Hello World"
+print(len(a))
+
+# Multiline Strings
+a = """ini 
+adalah multiline
+strings"""
+print(a)
+
+# Slicing Strings (Index dimulai dari 0)
+a = "Halo, Selamat Pagi"
+print(a[0:4])
+print(a[:5])
+print(a[10:])
+
+# Modifikasi String
+a = "Hello World"
+# Upper - mengubah string menjadi huruf kapital
+print(a.upper())
+# Lower - mengubah string menjadi huruf kecil
+print(a.lower())
+# Strip - menghapus spasi sebelum/setelah teks sesungguhnya (whitespace)
+print(a.strip())
+# Replace - mengganti suatu karakter dengan karakter lain dalam string
+print(a.replace("H", "J"))
+# Split - mengembalikan string menjadi list di antara karakter pemisah tertentu
+print(a.split(","))
+
+# Strings Concatenation - menggabungkan dua buah strings atau lebih dengan menggunakan operator tambah “+”
+a = "Bahasa"
+b = "Pemrograman"
+c = "Python"
+print(a + b + c)
+print(a + " " + b + " " + c)
+
+# Strings Formatting - fungsi format() digunakan untuk menggabungkan string dan number di Python
+umur = 20
+text = "Nama saya zam umur saya {}"
+print(text.format(umur))
+
+# {}
+jumlah = 4
+harga = 5000
+uang = 20000
+order = "Saya beli {} buah apel yang harganya Rp. {} dengan uang Rp. {}"
+print(order.format(jumlah, harga, uang))
+
+# {index}
+jumlah = 4
+harga = 5000
+uang = 20000
+order = "Saya beli {0} buah apel yang harganya Rp. {1} dengan uang Rp. {2}"
+print(order.format(jumlah, harga, uang))
+
+# f
+jumlah = 4
+harga = 5000
+uang = 20000 
+print(f"Saya beli {jumlah} buah apel yang harganya Rp. {harga} dengan uang Rp. {uang}")
