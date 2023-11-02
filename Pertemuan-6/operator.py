@@ -1,26 +1,23 @@
 # Penjumlahan
-x = 1+2
-print(x)
+print(1+2)
 
 # Pengurangan
-y = 10-9
-print(y)
+print(10-9)
 
 # Perkalian
-z = 10*3
-print(z)
+print(10*3)
 
 # Pembagian
-c = 10/2
-print(c)
+print(10/2)
 
 # Floor (Pembulatan Kebawah)
-v = 13//3
-print(v)
+print(13//3)
 
 # Modulus
-m = 23%10
-print(m)
+print(23%10)
+
+# Eksponensial
+print(3**4)
 
 # Comparison equal
 print(2 == 2)
@@ -39,6 +36,39 @@ print(8 >=8 )
 
 # Comparison less and equal than
 print(11 <= 9)
+
+# Operator Assignment
+# =
+x = 30
+print(x)
+
+# +=
+x += 3
+print(x)
+
+# -=
+x -= 5
+print(x)
+
+# *=
+x *= 2
+print(x)
+
+# /=
+x /= 10
+print(x)
+
+# //=
+x //= 12
+print(x)
+
+# %=
+x %= 10
+print(x)
+
+# **=
+x **= 10
+print(x)
 
 # Operator Identity
 # is
