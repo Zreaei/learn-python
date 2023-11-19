@@ -16,7 +16,8 @@ def random_array(low: int, high: int, size: int):
     return rng.integers(low=low, high=high, size=size)
 
 nilai_ujian = random_array(0, 100, 30)
-nilai_terurut = np.sort(nilai_ujian)
+nilai_ujian.sort()
+nilai_terurut = nilai_ujian[::-1]
 
 print(f"Nilai Ujian Setelah Diurutkan: ")
 print(nilai_terurut)
