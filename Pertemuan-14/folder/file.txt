@@ -1,0 +1,4 @@
+Selamat pagi!
+
+Ini adalah isi dari file.txt
+Jika anda berhasil membaca ini, selamat! program anda berhasil
