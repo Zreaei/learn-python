@@ -1,1 +1,0 @@
-Ngutang Pertemuan 8
