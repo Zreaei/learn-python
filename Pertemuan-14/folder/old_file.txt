@@ -1,7 +1,0 @@
-Ini
-adalah
-tulisan
-baru
-dengan
-metode
-writelines()
