@@ -14,4 +14,6 @@ int main(){
     float avgNilai = (float)totalNilai / jmlNilai;
 
     cout << "Nilai rata-ratanya adalah: " << avgNilai << endl;
+
+    return 0;
 }

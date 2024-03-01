@@ -11,10 +11,17 @@ int main() {
             cin >> arr[i][j];
         }
     } cout << endl;
+    
+    int m = 0;
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (arr[i][j] > m) {
+                m = arr[i][j];
+            }
+        }
+    }
 
-    cout << "Nilai array 2 x 3 adalah: " << endl;
-    cout << arr[0][0] << " " << arr[0][1] << " " << arr[0][2] << endl;
-    cout << arr[1][0] << " " << arr[1][1] << " " << arr[1][2] << endl;
-
+    cout << "Nilai Maksimum dari array tersebut adalah: " << m << endl;
+    
     return 0;
 }
