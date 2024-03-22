@@ -19,11 +19,44 @@
             }
 
             function HomePage(){
+                const students = ['Sandhika','Doddy','Erik'];
+                const [likes, setLikes] = React.useState(0);
+                const [number, setNumber] = React.useState(0);
+
+                function handleClick(){
+                    setLikes(likes + 1);
+                }
+
+                function resetClick(){
+                    setNumber(number - number);
+                }
+
+                function minusClick(){
+                    setNumber(number - 1);
+                }
+
+                function plusClick(){
+                    setNumber(number + 1);
+                }
+
                 return (
                     <div>
-                        <Header />
                         <Header name="Pa Dhika" />
-                    </div>)
+                        <ul>
+                            {
+                                students.map((students) => (
+                                    <li key={students}>{students}</li>
+                                ))
+                            }
+                        </ul>
+                        <button onClick={handleClick}>Like ({likes})</button>
+                        <h2>Latihan React</h2>
+                        <p>Number : {number}</p>
+                        <button onClick={minusClick}>-</button>
+                        <button onClick={resetClick}>Reset</button>
+                        <button onClick={plusClick}>+</button>
+                    </div>
+                    )
             }
 
             root.render(<HomePage />);
